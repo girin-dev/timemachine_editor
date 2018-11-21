@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>타임머신 에디터 with Jeje</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .editor {
+            width: 400px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .content {
+            box-sizing: border-box;
+            width: 400px;
+            height: 300px;
+            font-size: 20px;
+        }
+        .version {
+            float: left;
+        }
+        .version-indicator {
+            width: 40px;
+            display: inline-block;
+        }
+        .save {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="editor">
+        <h1>타임머신 에디터</h1>
+        <textarea class="content" autofocus></textarea>
+        <button class="save">저장</button>
+        <div class="version">
+            <div class="version-indicator">
+                <span class="curr-version"></span> &#47;
+                <span class="whole-version"></span>
+            </div>
+            <button class="previous">이전</button>
+            <button class="next">다음</button>
+        </div>
+        <ul data-id="version-list"><li></li></ul>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
