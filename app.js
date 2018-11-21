@@ -61,7 +61,7 @@
     let position = posit ? posit : 0;
     let content = posit ? contentList[posit - 1] : ''
     // let으로 지정한 변수가 빠져나오지 못하네요 ㅎㅎㅎㅎ
-    document.querySelector('.content').value = contentList;
+    document.querySelector('.content').value = content;
     document.querySelector('.curr-version').innerHTML = position;
     document.querySelector('.whole-version').innerHTML = contentList.length;
 });
